@@ -13,6 +13,7 @@
   font-size: inherit;
   box-shadow: none;
   box-sizing: border-box;
+  object-fit: contain;
 }
 
 html {
