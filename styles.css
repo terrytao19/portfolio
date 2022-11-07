@@ -13,7 +13,6 @@
   font-size: inherit;
   box-shadow: none;
   box-sizing: border-box;
-  object-fit: scale-down;
 }
 
 html {
@@ -25,6 +24,10 @@ body {
   line-height: 1.5;
   color: var(--clr-fg);
   background-color: var(--clr-bg);
+}
+
+.project-graphic {
+  max-width: 100%;
 }
 
 .light {
