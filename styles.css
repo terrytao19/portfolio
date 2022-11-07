@@ -26,10 +26,6 @@ body {
   background-color: var(--clr-bg);
 }
 
-.project-graphic {
-  max-width: 100%;
-}
-
 .light {
   --clr-bg: #fcfcfc;
   --clr-bg-alt: #fff;
