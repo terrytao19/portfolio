@@ -91,6 +91,11 @@ ul {
   list-style-type: none;
 }
 
+ul.no-bullets {
+  list-style-type: none; /* Remove bullets */
+  text-align: center;
+}
+
 a {
   text-decoration: none;
 }
