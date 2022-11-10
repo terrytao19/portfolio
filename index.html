@@ -114,10 +114,12 @@
               My program then reprojects these bounding boxes according to a calibrated camera matrix
               using a perspective-4-point algorithm, which enables us to retrieve precise xy
               coordinates of the cones. It then integrates these cone points based on velocity and
-              a track radius regression algorithm to produce the map shown below:
+              a track radius regression algorithm to produce the movement (u) matrix. It then takes
+              these estimated positions and applys an Extended Kalman Filter, in order to produce
+              the absolute map below:
             </p>
 
-            <img src="assets\map.gif" alt="Mapping Animation", style="width:100%">
+            <img src="assets\ekf.gif" alt="Mapping Animation", style="width:100%">
 
             <ul class="project__stack">
               <li class="project__stack-item">Python</li>
