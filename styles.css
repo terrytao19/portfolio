@@ -39,7 +39,8 @@ body {
   --clr-fg: #555;
   --clr-fg-alt: #444;
   --clr-primary: #2978b5;
-  --clr-secondary: #eeb03e;
+  --clr-secondary: #9b7a3496;
+  --clr-secondary-hover: #8a7e7086;
   --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
@@ -49,7 +50,8 @@ body {
   --clr-fg: #c8c8e0;
   --clr-fg-alt: #dedefa;
   --clr-primary: #8298ec;
-  --clr-secondary: #e2c38a;
+  --clr-secondary: #e2c38ab9;
+  --clr-secondary-hover: #f1e0ca52;
   --shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
@@ -178,7 +180,7 @@ button {
 .btn--outline:before {
   content: "";
   position: absolute;
-  background-color: var(--clr-primary);
+  background-color: var(--clr-secondary-hover);
   right: 100%;
   bottom: 0;
   left: 0;
