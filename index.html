@@ -55,16 +55,19 @@
     <main>
       <!-- About -->
       <div class="about center">
-        <h1>Hi, I'm <span class="about__name">Terry Tao.</span></h1>
-        <h2 class="about__role">I put sensors on things and make them move.</h2>
+        <h1>Portfolio: <span class="about__name">Terry Tao</span></h1>
+        <h2 class="about__role">
+          We choose to go to the Moon in this decade and do the other things, not because they are easy, but because we thought they would be easy.
+        </h2>
         <p class="about__desc">
           As a current undergraduate student at the University of Michigan, I'm taking a 
           computing-focused autonomy pathway and graduating in April 2025 with a B.S.E in
-          Robotics Engineering.
+          Robotics Engineering. This is my portfolio website. You can find some cool projects 
+          I've worked on in the past.
         </p>
 
         <div class="about__contact center">
-          <a href="https://github.com/terrytao19/portfolio/blob/main/assets/RESUME-June-16-23.pdf" target="_blank">
+          <a href="https://github.com/terrytao19/portfolio/blob/main/assets/RESUME-June-21-23.pdf" target="_blank">
             <span class="btn btn--outline">Resume</span>
           </a>
 
@@ -101,55 +104,80 @@
       <!-- Projects -->
       <section id="projects" class="section projects">
         <h2 class="section__title">Projects</h2>
+          <div class="projects__grid">
+            <div class="project">
+              <h3 class="project__title">
+                <a href="https://www.mracing.engin.umich.edu/">
+                  MRacing
+                </a>
+              </h3>
+
+              <p class="project__description">
+                I am the Autonomous System Director for the 23-24 design cycle for the Formula Student 
+                Racing team at the University of Michigan - Ann Arbor. It is my second year on the team, 
+                but a first for this autonomous subsystem at UofM, and my role as Director is to oversee the 
+                design, manufacturing and integration of the autonomous steering, brakes and safety electronics, 
+                as well as develop our perception, mapping, and policy control software stack for this car.
+              </p>
+
+              <img src="assets\MIS23team.jpg" alt="Team picture with MR23 at MIS", style="width:100%">
+
+              <p class="project__description">
+                One of the priorities of the autonomous system is a robust, vision + INS based mapping pipeline. 
+                I have created this ROS based mapping package that takes a camera stream, applies a custom YOLO 
+                traffic cone detection, filters the detections to track cones across frames, and integrates the 
+                perspective shifted detections into a global coordinate map for racing line optimization.
+              </p>
+
+              <p class="project__description">
+                This project is still under development, and as such, cannot be fully showcased just yet. It is 
+                difficult to demonstrate a ROS package without a car to run it on. These video demos are the best 
+                visuals I have until we build a fully autonomous car next year.
+              </p>
+
+              <div class="row">
+                <div class="column">
+                  <img src="assets\epoch2.gif" alt="Epoch 2 YOLOv7", style="width:100%">
+                  <img src="assets\MIS23launch.png" alt="Launching MR23 at MIS", style="width:100%">
+                </div>
+                <div class="column">
+                  <img src="assets\ekf.gif" alt="Mapping Animation", style="width:100%">
+                </div>
+              </div>
+
+              <ul class="project__stack">
+                <li class="project__stack-item">Python</li>
+                <li class="project__stack-item">C++</li>
+                <li class="project__stack-item">Torch</li>
+                <li class="project__stack-item">Docker</li>
+                <li class="project__stack-item">CAN</li>
+                <li class="project__stack-item">OpenCV</li>
+                <li class="project__stack-item">ROS</li>
+              </ul>
+
+              <!-- <a
+                href="https://github.com"
+                aria-label="source code"
+                class="link link--icon"
+              >
+                <i aria-hidden="true" class="fab fa-github"></i>
+              </a>
+              <a
+                href="https://example.com"
+                aria-label="live preview"
+                class="link link--icon"
+              >
+                <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+              </a> -->
+            </div>
+          </div>  
 
         <div class="projects__grid">
-          <div class="project">
-            <h3>Autonomous Formula Racecar</h3>
-            <p class="project__description">
-              As the Autonomous System Director, I am developing a vision-based mapping
-              and localization pipeline to integrate onto our 2023 racecar, which will have full
-              self driving capability. My pipeline uses a custom trained YOLOv7 cone detection
-              model, which can be seen working below:
-            </p>
-
-            <img src="assets\epoch2.gif" alt="Epoch 2 YOLOv7", style="width:100%">
-
-            <p class="project__description">
-              My program then reprojects these bounding boxes according to a calibrated camera matrix
-              using a perspective-4-point algorithm, which enables us to retrieve precise xy
-              coordinates of the cones. It then integrates these cone points based on velocity and
-              a track radius regression algorithm to produce the movement (u) matrix. It then takes
-              these estimated positions and applys an Extended Kalman Filter, in order to produce
-              the absolute map below:
-            </p>
-
-            <img src="assets\ekf.gif" alt="Mapping Animation", style="width:100%">
-
-            <ul class="project__stack">
-              <li class="project__stack-item">Python</li>
-              <li class="project__stack-item">C++</li>
-              <li class="project__stack-item">OpenCV</li>
-              <li class="project__stack-item">ROS</li>
-            </ul>
-
-            <!-- <a
-              href="https://github.com"
-              aria-label="source code"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fab fa-github"></i>
-            </a>
-            <a
-              href="https://example.com"
-              aria-label="live preview"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-            </a> -->
-          </div>
 
           <div class="project">
-            <h3>FIRST Robotics</h3>
+            <h3 class="project__title">
+              <a href="https://www.firstinspires.org/robotics/ftc">First Robotics</a>
+            </h3>
             <p class="project__description">
               I designed and programmed this robot for the FIRST Tech Challenge 2021-2022 season.
               Our robot qualified for the Maryland Tech Invitational, which is a prestigious
@@ -181,7 +209,9 @@
           </div>
 
           <div class="project">
-            <h3>Stewart Platform</h3>
+            <h3 class="project__title">
+              <a href="https://www.youtube.com/watch?v=HXj3IImhAik">Stewart Platform</a>
+            </h3>
             <p class="project__description">
               This is a 6 degree of freedom parallel manipulator that I designed and programmed.
             </p>
@@ -207,7 +237,7 @@
           </div>
         </div>
 
-        <!-- PROJECT GRID 2nd ROW -->
+        <!-- PROJECT GRID 3rd ROW -->
 
         <div class="projects__grid">
           <div class="project">
