@@ -271,6 +271,11 @@ main {
   margin-top: 3em;
 }
 
+.about2 {
+  flex-direction: column;
+  margin-top: 0em;
+}
+
 .about__name {
   color: var(--clr-primary);
 }
@@ -289,6 +294,10 @@ main {
 .about__desc,
 .about__contact {
   margin-top: 2.4em;
+}
+
+.about__link {
+  margin-top: 0.5em;
 }
 
 .about .link--icon {
