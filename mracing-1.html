@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portfolio" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/fa62c117c7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Terry Tao</title>
+</head>
+
+<body class="light" id="top">
+    <header class="header center">
+        <h4>
+            <a href="https://terrytao19.github.io/portfolio/" class="link">
+                <img src="assets\pfp.png" alt="Mapping Animation" , style="width:30%">
+            </a>
+        </h4>
+
+        <nav class="nav center">
+            <ul class="nav__list center">
+                <li class="nav__list-item">
+                    <a class="link link--nav" href="./index.html">Projects</a>
+                </li>
+                <li class="nav__list-item">
+                    <a class="link link--nav" href="#contact">Contact</a>
+                </li>
+            </ul>
+
+            <button type="button" aria-label="toggle theme" class="btn btn--icon">
+                <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
+            </button>
+
+            <button type="button" aria-label="toggle navigation" class="btn btn--icon nav__hamburger">
+                <i aria-hidden="true" class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <h3 class="project__page__title">MRacing - ADM</h3>
+
+        <div class="project__content">
+            <img src="assets\ADM-top.png" alt="ADM top" class="project__content__image">
+            <div class="project__content__description">
+                I designed the Autonomous Distribution Module, it distributes power and signals across all of the Autonomous System components.<br><br>
+                It has 4 CAN to USB converters, 6 electronically controlled fuses, 
+                shutdown circuit logic and relays, status LED logic, monitoring for EBS relays, and pressure sensor ADCs, 
+            </div>
+        </div>
+
+        <div class="project__content">
+            <img src="assets\ADM-bottom.png" alt="ADM bottom" class="project__content__image">
+            <div class="project__content__description">
+                Bottom of ADM board
+            </div>
+        </div>
+
+        <div class="project__content">
+            <img src="assets\ADM-sketch.png" alt="ADM sketch" class="project__content__image">
+            <div class="project__content__description">
+                Design for the ADM started as a block diagram to layout all of the requirements and IO
+            </div>
+        </div>
+
+        <div class="project__content">
+            <img src="assets\buzzer555.png" alt="Buzzer LTspice" class="project__content__image">
+            <div class="project__content__description">
+                The ADM handles many of the FSG rules, one example is the buzzer rule.<br><br>
+
+                By rules, a buzzer needs to sound at an frequency of 1Hz to 5Hz with 50% duty cycle with a total duration between 8s and 10s after entering
+                the "AS Emergency" state.<br><br>
+
+                
+                This LTspice simulation of a monostable 555 circuit with rising-edge triggering meets the 8-10s requirement. 
+                When Vin receives a step input (at 1s here), Vout remains HIGH for about 9s, then goes LOW. This design reduces 
+                failures from flashing faulty STM code, allowing control of both the status lights and buzzer with just four on/off 
+                digital signals from the STM.
+            </div>
+        </div>
+
+        <div class="project__content">
+            <img src="assets\ASSI-logic.png" alt="ASSI logic" class="project__content__image">
+            <div class="project__content__description">
+                After designing the ASSI, I made a logic table before finalizing the schematic to be extra sure that the four control signals actually
+                do what I want them to do.
+            </div>
+        </div>
+
+        <div class="project__content">
+            <img src="assets\STM-pinout.png" alt="STM pinout" class="project__content__image">
+            <div class="project__content__description">
+                Using the STM IDE, I made sure that all of the signals are assigned to pins which actually support the signal type.
+            </div>
+        </div>
+
+
+        <!-- Contact -->
+        <section class="section contact center" id="contact">
+            <h2 class="section__title">Contact</h2>
+            <ul class="no-bullets">
+                <li>terrytao19@gmail.com</li>
+                <li>631-951-7354</li>
+                <li>2603 Draper Dr, Ann Arbor MI 48109</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="footer">
+
+    </footer>
+
+    <div class="scroll-container">
+        <div class="scroll-top">
+            <a aria-label="Scroll up" href="#top">
+                <i aria-hidden="true" class="fas fa-arrow-up"></i>
+            </a>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

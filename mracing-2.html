@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portfolio" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/fa62c117c7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Terry Tao</title>
+</head>
+
+<body class="light" id="top">
+    <header class="header center">
+        <h4>
+            <a href="https://terrytao19.github.io/portfolio/" class="link">
+                <img src="assets\pfp.png" alt="Mapping Animation" , style="width:30%">
+            </a>
+        </h4>
+
+        <nav class="nav center">
+            <ul class="nav__list center">
+                <li class="nav__list-item">
+                    <a class="link link--nav" href="./index.html">Projects</a>
+                </li>
+                <li class="nav__list-item">
+                    <a class="link link--nav" href="#contact">Contact</a>
+                </li>
+            </ul>
+
+            <button type="button" aria-label="toggle theme" class="btn btn--icon">
+                <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
+            </button>
+
+            <button type="button" aria-label="toggle navigation" class="btn btn--icon nav__hamburger">
+                <i aria-hidden="true" class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <h3 class="project__page__title">MRacing - EBS</h3>
+
+        <div class="project__content">
+            <img src="assets\EBS_render.png" alt="EBS Render" class="project__content__image">
+            <div class="project__content__description">
+                I designed the Emergency Braking System, it actuates the brakes at the end of an autonomous mission, or whenever there is a fault 
+                or in the worst case when the remote emergency stop button is pressed. 
+            </div>
+        </div>
+
+        <div class="project__content">
+            <img src="assets\EBS-SDC.png" alt="EBS SDC" class="project__content__image">
+            <div class="project__content__description">
+                Design for the EBS started as a block diagram of how and when the system will need to trigger. Using this and the rules, 
+                I developed requirements to determine the data needed from the car to specify pressures and hardware for the EBS.
+            </div>
+        </div>
+
+        <div class="project__content">
+            <img src="assets\front-brakes.png" alt="Front pressure graph" class="project__content__image">
+            <div class="project__content__description">
+                From driving data, I found the lower bound brake pressure for both the rears and the fronts for 10[m/s<sup>2</sup>] as specified by rules.
+            </div>
+        </div>
+
+        <div class="project__content">
+            <img src="assets\bias-plot.png" alt="Bias plot" class="project__content__image">
+            <div class="project__content__description">
+                To spec the pressure regulators, I needed to know what the optimal front/rear brake bias is.<br><br>
+                Because of number of pistons in front vs rear calipers, there is a 66% front torque bias when both lines have equal pressure.<br><br>
+                66% is within the range for optimal bias at the velocities we are operating in.<br><br>
+                Therefore we can safely use the same spec pneumatic pressure regulator on each of the rear/front lines<br><br>
+            </div>
+        </div>
+
+        <div class="project__content">
+            <img src="assets\EBS-rev1-diagram.png" alt="Rev1 Diagram" class="project__content__image">
+            <div class="project__content__description">
+                Once I got the pressure specs, I drew a block diagram for the first revision of EBS
+            </div>
+        </div>
+
+        <div class="project__content">
+            <img src="assets\EBS-rev1-CAD.png" alt="Rev1 CAD" class="project__content__image">
+            <div class="project__content__description">
+                Using the block diagram, I created the rev1 EBS design with two linear pneumatic actuators directly pushing the brake pedal.<br><br> 
+                Issues with this design are discussed below.
+            </div>
+        </div>
+
+        <div class="project__content">
+            <img src="assets\EBS-rev2-diagram.png" alt="Rev1 Diagram" class="project__content__image">
+            <div class="project__content__description">
+                EBS rev2 diagram, the improvements include:<br><br>
+
+                Series wiring eliminates the need for a block manifold<br><br>
+
+                3/2 manual release valve keeps high pressure in when open<br><br>
+
+                Keeps access hole open<br><br>
+            </div>
+        </div>
+
+        <div class="project__content">
+            <img src="assets\EBS_cross_section.png" alt="EBS actuator" class="project__content__image">
+            <div class="project__content__description">
+                EBS rev2 actuator design
+            </div>
+        </div>
+
+        <div class="project__content">
+            <img src="assets\ebs-actuator-3d.png" alt="EBS actuator" class="project__content__image">
+            <div class="project__content__description">
+                EBS rev2 actuator design
+            </div>
+        </div>
+
+        <div class="project__content">
+            <img src="assets\ebs-spin-2.gif" alt="EBS CAD spin gif" class="project__content__image">
+            <div class="project__content__description">
+                EBS rev2 in its entirety
+            </div>
+        </div>
+
+
+        <!-- Contact -->
+        <section class="section contact center" id="contact">
+            <h2 class="section__title">Contact</h2>
+            <ul class="no-bullets">
+                <li>terrytao19@gmail.com</li>
+                <li>631-951-7354</li>
+                <li>2603 Draper Dr, Ann Arbor MI 48109</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="footer">
+
+    </footer>
+
+    <div class="scroll-container">
+        <div class="scroll-top">
+            <a aria-label="Scroll up" href="#top">
+                <i aria-hidden="true" class="fas fa-arrow-up"></i>
+            </a>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

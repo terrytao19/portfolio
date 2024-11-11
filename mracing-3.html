@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portfolio" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/fa62c117c7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Terry Tao</title>
+</head>
+
+<body class="light" id="top">
+    <header class="header center">
+        <h4>
+            <a href="https://terrytao19.github.io/portfolio/" class="link">
+                <img src="assets\pfp.png" alt="Mapping Animation" , style="width:30%">
+            </a>
+        </h4>
+
+        <nav class="nav center">
+            <ul class="nav__list center">
+                <li class="nav__list-item">
+                    <a class="link link--nav" href="./index.html">Projects</a>
+                </li>
+                <li class="nav__list-item">
+                    <a class="link link--nav" href="#contact">Contact</a>
+                </li>
+            </ul>
+
+            <button type="button" aria-label="toggle theme" class="btn btn--icon">
+                <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
+            </button>
+
+            <button type="button" aria-label="toggle navigation" class="btn btn--icon nav__hamburger">
+                <i aria-hidden="true" class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <h3 class="project__page__title">MRacing - Perception + Mapping</h3>
+
+        <div class="project__content">
+            <img src="assets\map.gif" alt="Mapping gif" class="project__content__image">
+            <div class="project__content__description">
+                Our perception stack works by combining 3D position detections of the cones with the color detection from the camera.<br><br>
+                
+                Here is some raw data after perception and before EKF, with cones plotted where they were detected in the world frame.<br><br>
+                
+                I made a custom midline regression program that plots a circle with the radius of the midline.
+            </div>
+        </div>
+
+        <div class="project__content">
+            <img src="assets\ekf.gif" alt="EKF gif" class="project__content__image">
+            <div class="project__content__description">
+                I made an EKF and cone ID assigner, the data is the same as the gif above, but this time the cones are matched and correlated between frames.<br><br>
+
+                Cone covariances are represented by the size of the dot.
+            </div>
+        </div>
+
+        <div class="project__content">
+            <img src="assets\skad.gif" alt="SKAD gif" class="project__content__image">
+            <div class="project__content__description">
+                Heres some data for the skidpad track, the green dots are ground truth cone locations, set beforehand, and the purple dots are the detected 
+                cones. I wrote an ICP initial pose aligner to align the measured starting pose of the car to the ground truth starting pose.
+            </div>
+        </div>
+        
+        <div class="project__content">
+            <img src="assets\skad-subie.gif" alt="Skidpad gif" class="project__content__image">
+            <div class="project__content__description">
+                Collecting skidpad data for mapping testing
+            </div>
+        </div>
+
+        <div class="project__content">
+            <img src="assets\autox-subie.gif" alt="Autox gif" class="project__content__image">
+            <div class="project__content__description">
+                Collecting autocross data for mapping testing
+            </div>
+        </div>
+
+        <!-- Contact -->
+        <section class="section contact center" id="contact">
+            <h2 class="section__title">Contact</h2>
+            <ul class="no-bullets">
+                <li>terrytao19@gmail.com</li>
+                <li>631-951-7354</li>
+                <li>2603 Draper Dr, Ann Arbor MI 48109</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="footer">
+
+    </footer>
+
+    <div class="scroll-container">
+        <div class="scroll-top">
+            <a aria-label="Scroll up" href="#top">
+                <i aria-hidden="true" class="fas fa-arrow-up"></i>
+            </a>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

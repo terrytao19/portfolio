@@ -1,399 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Portfolio" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/fa62c117c7.js"
-      crossorigin="anonymous"
-    ></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/fa62c117c7.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css" />
     <title>Terry Tao</title>
-  </head>
-  <body class="light" id="top">
+</head>
+
+<body class="light" id="top">
     <header class="header center">
-      <h4>
-        <a href="https://terrytao19.github.io/portfolio/" class="link">
-          <img src="assets\pfp.png" alt="Mapping Animation", style="width:30%">
-        </a>
-      </h4>
+        <h4>
+            <a href="https://terrytao19.github.io/portfolio/" class="link">
+                <img src="assets\pfp.png" alt="Mapping Animation" , style="width:30%">
+            </a>
+        </h4>
 
-      <nav class="nav center">
-        <ul class="nav__list center">
-          <li class="nav__list-item">
-            <a class="link link--nav" href="#projects">Projects</a>
-          </li>
-          <li class="nav__list-item">
-            <a class="link link--nav" href="#skills">Skills</a>
-          </li>
-          <li class="nav__list-item">
-            <a class="link link--nav" href="#contact">Contact</a>
-          </li>
-        </ul>
+        <nav class="nav center">
+            <ul class="nav__list center">
+                <li class="nav__list-item">
+                    <a class="link link--nav" href="#projects">Projects</a>
+                </li>
+                <li class="nav__list-item">
+                    <a class="link link--nav" href="#contact">Contact</a>
+                </li>
+            </ul>
 
-        <button type="button" aria-label="toggle theme" class="btn btn--icon">
-          <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
-        </button>
+            <button type="button" aria-label="toggle theme" class="btn btn--icon">
+                <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
+            </button>
 
-        <button
-          type="button"
-          aria-label="toggle navigation"
-          class="btn btn--icon nav__hamburger"
-        >
-          <i aria-hidden="true" class="fas fa-bars"></i>
-        </button>
-      </nav>
+            <button type="button" aria-label="toggle navigation" class="btn btn--icon nav__hamburger">
+                <i aria-hidden="true" class="fas fa-bars"></i>
+            </button>
+        </nav>
     </header>
 
     <main>
-      <!-- About -->
-      <div class="about center">
-        <h1><span class="about__name">Terry Tao</span></h1>
-        <h2 class="about__role">
-          
-        </h2>
-        <p class="about__desc">
-          As a current undergraduate student at the University of Michigan, I'm taking a 
-          computing-focused autonomy pathway and graduating in April 2025 with a B.S.E in
-          Robotics Engineering. This is my portfolio website. You can find some cool projects 
-          I've worked on in the past.
-        </p>
+        <!-- About -->
+        <div class="about center">
+            <h1><span class="about__name">Terry Tao</span></h1>
+            <h2 class="about__role">
 
-        <div class="about__contact center">
-          <a href="https://github.com/terrytao19/portfolio/blob/main/assets/Terry-Tao-RESUME-Sept-19-24.pdf" target="_blank">
-            <span class="btn btn--outline">Resume</span>
-          </a>
+            </h2>
+            <p class="about__desc">
+                University of Michigan 〽️<br>
+                Expected Robotics B.S.E graduation April 2025<br>
+                Expected Robotics M.S.E graduation April 2026<br>
+                Originally from Long Island NY 🥯
+            </p>
 
-          <a href="https://github.com/terrytao19" target="_blank">
-            <span class="btn btn--outline">GitHub</span>
-          </a>
-
-          <a href="https://github.com/terrytao19/portfolio/blob/main/assets/transcript-f23.pdf" target="_blank">
-            <span class="btn btn--outline">Transcript</span>
-          </a>
-
-          <a
-            href="https://github.com/terrytao19"
-            aria-label="github"
-            class="link link--icon"
-          >
-            <i aria-hidden="true" class="fab fa-github"></i>
-          </a>
-
-          <a
-            href="https://www.linkedin.com/in/terrytao19/"
-            aria-label="linkedin"
-            class="link link--icon"
-          >
-            <i aria-hidden="true" class="fab fa-linkedin"></i>
-          </a>
-
-          <a
-            href="https://www.youtube.com/@terrytao19"
-            aria-label="youtube"
-            class="link link--icon"
-          >
-            <i aria-hidden="true" class="fab fa-youtube"></i>
-          </a>
-        </div>
-      </div>
-
-      <!-- Projects -->
-      <section id="projects" class="section projects">
-        <h2 class="section__title">My Projects</h2>
-          <div class="projects__grid">
-            <div class="project">
-              <h3 class="project__title">
-                <a href="https://www.mracing.engin.umich.edu/">
-                  MRacing
+            <div class="about__contact center">
+                <a href="./resume.html">
+                    <span class="btn btn--outline">Resume</span>
                 </a>
-              </h3>
-              
-              <div class="about2 center">
-                <div class="about__link center">
-                  <a href="https://docs.google.com/presentation/d/1-X1a2zc8aiIwGAcZuyIYD49GdTzeVI_TX0TwgEx_IZE/edit#slide=id.g2876ed01865_0_412" target="_blank">
-                    <span class="btn btn--outline">Design Slides</span>
-                  </a>
-                </div>
-              </div>
 
-              <p class="project__description">
-                Build University of Michigan's first ever Autonomous FSAE car
-              </p>
+                <a href="https://github.com/terrytao19" target="_blank">
+                    <span class="btn btn--outline">GitHub</span>
+                </a>
 
-              <img src="assets\pitt-23.jpg" alt="Team picture with MR23 at MIS", style="width:100%">
+                <a href="https://www.linkedin.com/in/terrytao19/" aria-label="linkedin" class="link link--icon">
+                    <i aria-hidden="true" class="fab fa-linkedin"></i>
+                </a>
 
-              <div class="row">
-                <div class="column">
-                  <img src="assets\skad.gif" alt="Epoch 2 YOLOv7", style="width:100%">
-                  <img src="assets\ADM_toplevel.png" alt="Launching MR23 at MIS", style="width:100%">
-                  <img src="assets\EBS_render.png" alt="Launching MR23 at MIS", style="width:100%">
-                </div>
-                <div class="column">
-                  <img src="assets\ekf.gif" alt="Mapping Animation", style="width:100%">
-                  <img src="assets\EBS_cross_section.png" alt="Mapping Animation", style="width:100%">
-                  <img src="assets\epoch2.gif" alt="Mapping Animation", style="width:100%">
-                </div>
-              </div>
-
-              <ul class="project__stack">
-                <li class="project__stack-item">All the skills</li>
-              </ul>
-
-              <!-- <a
-                href="https://github.com"
-                aria-label="source code"
-                class="link link--icon"
-              >
-                <i aria-hidden="true" class="fab fa-github"></i>
-              </a>
-              <a
-                href="https://example.com"
-                aria-label="live preview"
-                class="link link--icon"
-              >
-                <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-              </a> -->
+                <a href="https://www.youtube.com/@terrytao19" aria-label="youtube" class="link link--icon">
+                    <i aria-hidden="true" class="fab fa-youtube"></i>
+                </a>
             </div>
-          </div>  
-
-        <div class="projects__grid">
-
-          <div class="project">
-            <h3 class="project__title">
-              <a href="https://www.firstinspires.org/robotics/ftc">First Robotics</a>
-            </h3>
-            <p class="project__description">
-              I designed and programmed this robot for the FIRST Tech Challenge 2021-2022 season.
-              Our robot qualified for the Maryland Tech Invitational, which is a prestigious
-              event that only accepts the top 40 teams internationally.
-            </p>
-
-            <img src="./assets/oscar-cad.png" alt="Robot CAD", style="width:100%">
-            
-            <p class="project__description">
-              This is a video of the robot operating autonomously as it localizes and changes
-              state in order to deposit cubes onto the platform as fast as possible.
-            </p>
-
-            <img src="assets\robot.gif" alt="Robot Moving", style="width:100%">
-            
-            <p class="project__description">
-              Another mechanism on our robot is the 3 degrees of freedom tape measure turret, which
-              is operated by a driver in order to place the plastic cup on top of the platform.
-            </p>
-
-            <img src="assets\capping.gif" alt="Robot Moving", style="width:100%">
-
-            <ul class="project__stack">
-              <li class="project__stack-item">Fusion 360</li>
-              <li class="project__stack-item">Solidworks</li>
-              <li class="project__stack-item">Java</li>
-            </ul>
-
-          </div>
-
-          <div class="project">
-            <h3 class="project__title">
-              <a href="https://www.youtube.com/watch?v=HXj3IImhAik">Stewart Platform</a>
-            </h3>
-            <p class="project__description">
-              This is a 6 degree of freedom parallel manipulator that I designed and programmed.
-            </p>
-
-            <img src="./assets/Stewart-CAD.png" alt="Robot CAD", style="width:100%">
-            <img src="./assets/Stewart-Wiring.JPG" alt="Robot CAD", style="width:100%">
-            
-            <p class="project__description">
-              One application of this project could be a sailboat table or cooktop, so when the
-              boat is under way, your food does not slide off. I used an IMU to dampen the
-              acceleration in all 6 axes, demonstrated below:
-            </p>         
-            
-            <img src="./assets/Stewart-Motions.gif" alt="Robot CAD", style="width:100%">
-
-
-            <ul class="project__stack">
-              <li class="project__stack-item">Solidworks</li>
-              <li class="project__stack-item">C++</li>
-              <li class="project__stack-item">Shop Skills</li>
-            </ul>
-
-          </div>
         </div>
 
-        <!-- PROJECT GRID 3rd ROW -->
+        <!-- Projects -->
+        <section id="projects" class="section projects">
 
-        <div class="projects__grid">
-          <div class="project">
-            <h3>Custom 3D Printers</h3>
-            <p class="project__description">
-              I designed a custom dual nozzle, water-cooled 3D printer so that I could print
-              structural material alongside dissolvable supports, making complex
-              geometries easier to print.
-            </p>
+            <div class="projects__grid">
+                <a href="./mracing-0.html">
+                    <div class="project">
+                        <h3 class="project__title">MRacing - Autonomous Director</h3>
+                        <img src="assets\pitt-23-square.jpg" alt="Team picture at Pittsburgh" , style="width:100%">
+                    </div>
+                </a>
+                <a href="./mracing-1.html">
+                    <div class="project">
+                        <h3 class="project__title">MRacing - ADM</h3>
+                        <img src="assets\ADM-top.png" alt="ADM PCB" , style="width:100%">
+                    </div>
+                </a>
+                <a href="./mracing-2.html">
+                    <div class="project">
+                        <h3 class="project__title">MRacing - EBS</h3>
+                        <img src="assets\EBS_render.png" alt="EBS" , style="width:100%">
+                    </div>
+                </a>
+            </div>
 
-            <img src="./assets/chimera-printing.gif" alt="Robot CAD", style="width:100%">
-            
-            <p class="project__description">
-              Here is my custom built open source small format printer (Voron-v0). The goal of this one 
-              was to print at higher temperatures, so a heated chamber was used to prevent warping.
-            </p>
+        </section>
 
-            <img src="assets\PXL_20210925_213851009.jpg" alt="Robot Moving", style="width:100%">
+        <section id="projects" class="section projects">
 
-            <img src="assets\voron-printing.gif" alt="Robot Moving", style="width:100%">
-            
-            
-            <ul class="project__stack">
-              <li class="project__stack-item">Fusion 360</li>
-              <li class="project__stack-item">Solidworks</li>
-              <li class="project__stack-item">Slicing Software</li>
+            <div class="projects__grid">
+                <a href="./mracing-3.html">
+                    <div class="project">
+                        <h3 class="project__title">MRacing - Perception + Mapping</h3>
+                        <img src="assets\skad.png" alt="Skidpad map" , style="width:100%">
+                    </div>
+                </a>
+
+                <a href="./ekranoplan.html">
+                    <div class="project">
+                        <h3 class="project__title">Ekranoplan Controller Design</h3>
+                        <img src="assets\ekranoplan.jpg" alt="Ekranoplan" , style="width:100%">
+                    </div>
+                </a>
+
+                <a href="./stewart.html">
+                    <div class="project">
+                        <h3 class="project__title">Stewart Platform</h3>
+                        <img src="assets\stewart-CAD.png" alt="Stewart Platform CAD" , style="width:100%">
+                    </div>
+                </a>
+            </div>
+
+        </section>
+
+        <section id="projects" class="section projects">
+
+            <div class="projects__grid">
+                <a href="./ftc.html">
+                    <div class="project">
+                        <h3 class="project__title">First Robotics</h3>
+                        <img src="assets\oscar-cad-square.png" alt="First robot CAD" , style="width:100%">
+                    </div>
+                </a>
+                <a href="./watches.html">
+                    <div class="project">
+                        <h3 class="project__title">Custom Watches</h3>
+                        <img src="assets\three-watches.jpg" alt="watches" , style="width:100%">
+                    </div>
+                </a>
+                <a href="./loft.html">
+                    <div class="project">
+                        <h3 class="project__title">Steel Loft</h3>
+                        <img src="assets\loft-square.jpg" alt="Stewart Platform CAD" , style="width:100%">
+                    </div>
+                </a>
+            </div>
+
+        </section>
+
+        <section id="projects" class="section projects">
+
+            <div class="projects__grid">
+                <a href="#">
+                    <div class="project">
+                        <h3 class="project__title">MRacing - Autonomous Controls</h3>
+                        <img src="assets\wip.png" alt="WIP" , style="width:100%">
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="project">
+                        <h3 class="project__title">WIP</h3>
+                        <img src="assets\wip.png" alt="WIP" , style="width:100%">
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="project">
+                        <h3 class="project__title">WIP</h3>
+                        <img src="assets\wip.png" alt="WIP" , style="width:100%">
+                    </div>
+                </a>
+            </div>
+
+        </section>
+
+        <!-- Contact -->
+        <section class="section contact center" id="contact">
+            <h2 class="section__title">Contact</h2>
+            <ul class="no-bullets">
+                <li>terrytao19@gmail.com</li>
+                <li>631-951-7354</li>
+                <li>2603 Draper Dr, Ann Arbor MI 48109</li>
             </ul>
-
-          </div>
-
-          <div class="project">
-            <h3>Loft</h3>
-            <p class="project__description">
-              My apartment has very high ceilings, so I welded together a loft for my bed. 
-            </p>
-
-            <img src="assets\loft-bolt.png" alt="Loft bolt", style="width:100%">
-
-            <p class="project__description">
-              Assembly test at the shop, fully assembled in apartment:
-            </p>
-
-            <img src="assets\loft-combined.png" alt="Mapping Animation", style="width:100%">
-
-            <p class="project__description">
-              After decoration:
-            </p>
-
-            <img src="assets\loft-with-net.jpg" alt="Loft with net", style="width:100%">
-
-            <ul class="project__stack">
-              <li class="project__stack-item">TIG Welding</li>
-            </ul>
-
-          </div>
-
-
-        </div>
-
-        <!-- PROJECT GRID 3rd ROW -->
-
-        <div class="projects__grid">
-          <div class="project">
-            <h3>Differential Swerve</h3>
-            <p class="project__description">
-              In 2020, I developed a differential swerve drivetrain for FIRST Robotics, which used
-              two motors per drive wheel to spin around both the z and x axes.
-            </p>
-
-            <img src="./assets/IMG_20210206_190535.jpg" alt="Robot CAD", style="width:100%">
-            
-            <p class="project__description">
-              Because of the way the ring gears are designed, this swerve drive was capable of 
-              continuous rotation of the wheels to face any direction, which made positioning of 
-              this chassis faster than if mecanum wheels were used instead.
-            </p>
-            
-            <img src="./assets/IMG_20210105_180944__01.jpg" alt="Robot CAD", style="width:100%">
-
-            <ul class="project__stack">
-              <li class="project__stack-item">Fusion 360</li>
-              <li class="project__stack-item">Java</li>
-            </ul>
-
-          </div>
-
-          <div class="project">
-            <h3>Thrust Vectoring</h3>
-            <p class="project__description">
-              I developed a model rocket using a custom thrust vectoring module, 
-              which can be used to correct or control the trajectory during flight.
-            </p>
-
-            <img src="assets\tvc_v2_render3.png" alt="Epoch 2 YOLOv7", style="width:100%">
-
-            <p class="project__description">
-              Parachute ejection mechanism testing:
-            </p>
-
-            <img src="assets\para-testing.gif" alt="Mapping Animation", style="width:100%">
-            
-            <p class="project__description">
-              Static fire test:
-            </p>
-
-            <img src="assets\static-test.gif" alt="Mapping Animation", style="width:100%">
-
-            <ul class="project__stack">
-              <li class="project__stack-item">Fusion 360</li>
-              <li class="project__stack-item">C++</li>
-            </ul>
-
-          </div>
-        </div>
-
-
-
-      </section>
-
-      <!-- Skills -->
-      <section class="section skills" id="skills">
-        <h2 class="section__title">Skills</h2>
-        <ul class="skills__list">
-          <li class="skills__list-item btn btn--plain">Solidworks</li>
-          <li class="skills__list-item btn btn--plain">Fusion 360</li>
-          <li class="skills__list-item btn btn--plain">Inventor</li>
-          <li class="skills__list-item btn btn--plain">Onshape</li>
-          <li class="skills__list-item btn btn--plain">C++</li>
-          <li class="skills__list-item btn btn--plain">Java</li>
-          <li class="skills__list-item btn btn--plain">Python</li>
-          <li class="skills__list-item btn btn--plain">R</li>
-          <li class="skills__list-item btn btn--plain">MATLAB</li>
-          <li class="skills__list-item btn btn--plain">Git</li>
-          <li class="skills__list-item btn btn--plain">HTML</li>
-          <li class="skills__list-item btn btn--plain">Mathematica</li>
-          <li class="skills__list-item btn btn--plain">ROS</li>
-          <li class="skills__list-item btn btn--plain">OpenCV</li>
-          <li class="skills__list-item btn btn--plain">Pytorch</li>
-          <li class="skills__list-item btn btn--plain">Blender</li>
-          <li class="skills__list-item btn btn--plain">Simplify3D</li>
-          <li class="skills__list-item btn btn--plain">CLI</li>
-          <li class="skills__list-item btn btn--plain">CAN-HS</li>
-          <li class="skills__list-item btn btn--plain">CAN-FD</li>
-          <li class="skills__list-item btn btn--plain">I2C</li>
-          <li class="skills__list-item btn btn--plain">SPI</li>
-          <li class="skills__list-item btn btn--plain">UART</li>
-          <li class="skills__list-item btn btn--plain">Fiber Laser</li>
-          <li class="skills__list-item btn btn--plain">CO2 Laser</li>
-          <li class="skills__list-item btn btn--plain">Waterjet</li>
-          <li class="skills__list-item btn btn--plain">GTAW</li>
-          <li class="skills__list-item btn btn--plain">FDM Printing</li>
-          <li class="skills__list-item btn btn--plain">Wire Harnessing</li>
-          <li class="skills__list-item btn btn--plain">Chinese</li>
-        </ul>
-      </section>
-
-      <!-- Contact -->
-      <section class="section contact center" id="contact">
-        <h2 class="section__title">Contact</h2>
-        <ul class="no-bullets">
-          <li>terrytao19@gmail.com</li>
-          <li>631-951-7354</li>
-        </ul>
-      </section>
+        </section>
     </main>
 
     <footer class="footer">
@@ -401,13 +195,14 @@
     </footer>
 
     <div class="scroll-container">
-    <div class="scroll-top">
-      <a aria-label="Scroll up" href="#top">
-        <i aria-hidden="true" class="fas fa-arrow-up"></i>
-      </a>
-    </div>
+        <div class="scroll-top">
+            <a aria-label="Scroll up" href="#top">
+                <i aria-hidden="true" class="fas fa-arrow-up"></i>
+            </a>
+        </div>
     </div>
 
     <script src="./script.js"></script>
-  </body>
+</body>
+
 </html>

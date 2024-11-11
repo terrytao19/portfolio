@@ -289,6 +289,7 @@ main {
 .about__desc {
   font-size: 1rem;
   max-width: 600px;
+  text-align: center;
 }
 
 .about__desc,
@@ -308,8 +309,41 @@ main {
   margin-right: 1em;
 }
 
+.project__page__title {
+  text-align: center;
+  font-size: x-large;
+  margin: 2em;
+  color: var(--clr-primary);
+}
+
+.project__content {
+  display: flex;
+  align-items: center; /* Centers content vertically */
+  gap: 10%; /* Adds space between the image and description */
+  padding: 2em;
+}
+
+.project__content__image {
+  width: 60%; /* Set the desired width */
+}
+
+.project__content__full {
+  width: 100%; /* Set the desired width */
+}
+
+
+.project__content__timeline {
+  width: 100%; /* Set the desired width */
+}
+
+.project__content__description {
+  flex: 1; /* Allows the description to take up the remaining space */
+}
+
 .project__title {
   color: var(--clr-primary);
+  margin-bottom: 6%;
+  font-size: 1.2rem;
 }
 
 .projects__grid {
@@ -322,6 +356,7 @@ main {
 }
 
 .project {
+  cursor: pointer;
   padding: 2em;
   margin: 0 auto;
   text-align: center;
@@ -401,6 +436,8 @@ main {
 
   .section {
     margin-top: 4em;
+    margin-bottom: 4em;
+    position: relative;
   }
 
   .nav__list {
