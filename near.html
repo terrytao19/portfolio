@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portfolio" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/fa62c117c7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Terry Tao</title>
+</head>
+
+<body class="light" id="top">
+    <header class="header center">
+        <h4>
+            <a href="https://terrytao19.github.io/portfolio/" class="link">
+                <img src="assets\pfp.png" alt="Mapping Animation" , style="width:30%">
+            </a>
+        </h4>
+
+        <nav class="nav center">
+            <ul class="nav__list center">
+                <li class="nav__list-item">
+                    <a class="link link--nav" href="./index.html">Projects</a>
+                </li>
+                <li class="nav__list-item">
+                    <a class="link link--nav" href="#contact">Contact</a>
+                </li>
+            </ul>
+
+            <button type="button" aria-label="toggle theme" class="btn btn--icon">
+                <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
+            </button>
+
+            <button type="button" aria-label="toggle navigation" class="btn btn--icon nav__hamburger">
+                <i aria-hidden="true" class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <h3 class="project__page__title">NEAR - UWB Tracker</h3>
+
+        <div class="project__content">
+            <img src="assets\NEAR-anchors.jpg" alt="Five assembled NEAR anchor boards" class="project__content__image">
+            <div class="project__content__description">
+                NEAR anchors<br><br>
+
+                NEAR is a system to trilaterate a tag using time-of-flight UWB chirps and a central LoRa base station.
+                These are the five assembled anchor boards. On each board, the DW1000 UWB module is on the right edge
+                and the Seeed Studio LoRa module is at the top.<br><br>
+
+                I was responsible for the PCB design and bringup for the anchor boards and the tag boards, and designed a radio protocol
+                to minimize chirp overlaps and maximize ranging rate.
+            </div>
+        </div>
+
+        <div class="project__content">
+            <img src="assets\NEAR-tags.jpg" alt="NEAR tag boards" class="project__content__image">
+            <div class="project__content__description">
+                NEAR tags, built around the DW1000 UWB module
+            </div>
+        </div>
+
+        <div class="project__content">
+            <img src="assets\NEAR-credits.jpg" alt="Assembled NEAR anchor case" class="project__content__image">
+            <div class="project__content__description">
+                The assembled case for the anchors
+            </div>
+        </div>
+
+        <div class="project__content">
+            <img src="assets\NEAR-toggling.gif" alt="Toggling the anchor screen" class="project__content__image">
+            <div class="project__content__description">
+                Pressing the button on the anchor to toggle the screen
+            </div>
+        </div>
+
+
+        <div class="project__content">
+            <img src="assets\NEAR-tracking.jpg" alt="NEAR tracking on presentation day" class="project__content__image">
+            <div class="project__content__description">
+                Presentation day. The red bounding boxes are drawn around the tagged people using the fused video and tag data.
+            </div>
+        </div>
+
+        <!-- Contact -->
+        <section class="section contact center" id="contact">
+            <h2 class="section__title">Contact</h2>
+            <ul class="no-bullets">
+                <li>terrytao19@gmail.com</li>
+                <li>631-951-7354</li>
+                <li>2603 Draper Dr, Ann Arbor MI 48109</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="footer">
+
+    </footer>
+
+    <div class="scroll-container">
+        <div class="scroll-top">
+            <a aria-label="Scroll up" href="#top">
+                <i aria-hidden="true" class="fas fa-arrow-up"></i>
+            </a>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
